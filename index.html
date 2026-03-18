@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://localhost:8000/public/js/app.js"></script>
+    <style>html, body, #meeting-container { height: 100%; margin: 0; padding: 0; }</style>
+    <script type="text/javascript">
+      window.onload = () => {
+        // Token can be passed as ?token=<JWT> in the URL, or hardcode it below.
+        const params = new URLSearchParams(window.location.search);
+        const token  = params.get("token")
+          || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiY2Q5Njk1ZC0wMjhkLTRlYWUtYjNlZC1mZTQ0NzdhZGFiOGEiLCJleHAiOjE3ODEzMzMwNTcsInR5cGUiOiJhY2Nlc3MiLCJqdGkiOiI2ODc0MzlhNC05ZWVlLTQ5NjUtYWQ4YS1kZTIyNTU3NDJlODQifQ.s_i_lNf7qLMiZZ5iHBwsE-dQz5FfEpSY8J3fDxD-II8";
+
+        new WebRTCMeetingAPI({
+          serverUrl:  "ws://localhost:8000",
+          roomName:   params.get("room") || "test-room",
+          token,
+          parentNode: document.querySelector("#meeting-container"),
+        });
+      };
+    </script>
+  </head>
+  <body><div id="meeting-container"></div></body>
+</html>
