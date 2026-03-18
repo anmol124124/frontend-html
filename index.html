@@ -11,7 +11,7 @@
           || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiY2Q5Njk1ZC0wMjhkLTRlYWUtYjNlZC1mZTQ0NzdhZGFiOGEiLCJleHAiOjE3ODEzMzMwNTcsInR5cGUiOiJhY2Nlc3MiLCJqdGkiOiI2ODc0MzlhNC05ZWVlLTQ5NjUtYWQ4YS1kZTIyNTU3NDJlODQifQ.s_i_lNf7qLMiZZ5iHBwsE-dQz5FfEpSY8J3fDxD-II8";
 
         new WebRTCMeetingAPI({
-          serverUrl:  "ws://localhost:8000",
+          serverUrl:  "ws://backend.antier.xyz",
           roomName:   params.get("room") || "test-room",
           token,
           parentNode: document.querySelector("#meeting-container"),
