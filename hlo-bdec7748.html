@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hlo</title>
+    <script src="https://septimal-irving-realistic.ngrok-free.dev/public/js/app.js?ngrok-skip-browser-warning=true" defer></script>
+    <style>html, body, #meeting-container { height: 100%; margin: 0; padding: 0; }</style>
+  </head>
+  <body>
+    <div id="meeting-container"></div>
+    <script>
+      window.onload = () => {
+        new WebRTCMeetingAPI({
+          roomName:   "hlo-bdec7748",
+          token:      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYTZhYjYyOC02ZTQ5LTQ1YTktOTcxMS00MGQyN2E5ZmRhNDQiLCJleHAiOjQ5Mjc1MDYyOTUsInR5cGUiOiJhY2Nlc3MiLCJqdGkiOiIxYTIwMTIyOC1jNTAwLTRjY2YtODk4MC1hNzliOTA0ZjMzZTIiLCJwcm9qZWN0X2lkIjoiNTYwMGI5MjMtYTFlOS00OGNiLWIzMTEtZTU1MWFkZTQxOTM4In0.80bWuIoxKPycJ9OBGs3PjSVp2tPD9xrNOW3v6YnU8m0",
+          parentNode: document.querySelector('#meeting-container'),
+        });
+      };
+    </script>
+  </body>
+</html>

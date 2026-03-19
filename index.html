@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://backend.antier.xyz/public/js/app.js"></script>
+    <script src="http://localhost:8000/public/js/app.js"></script>
     <style>html, body, #meeting-container { height: 100%; margin: 0; padding: 0; }</style>
     <script type="text/javascript">
       window.onload = () => {
         // Token can be passed as ?token=<JWT> in the URL, or hardcode it below.
         const params = new URLSearchParams(window.location.search);
         const token  = params.get("token")
-          || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiY2Q5Njk1ZC0wMjhkLTRlYWUtYjNlZC1mZTQ0NzdhZGFiOGEiLCJleHAiOjE3ODEzMzMwNTcsInR5cGUiOiJhY2Nlc3MiLCJqdGkiOiI2ODc0MzlhNC05ZWVlLTQ5NjUtYWQ4YS1kZTIyNTU3NDJlODQifQ.s_i_lNf7qLMiZZ5iHBwsE-dQz5FfEpSY8J3fDxD-II8";
+          || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1NDdjNjY4Ny1kN2Q0LTQ4ODYtOWFjNS1jZTIyYWY1NGQ0ZGMiLCJleHAiOjQ5Mjc0MzMxMzQsInR5cGUiOiJhY2Nlc3MiLCJqdGkiOiI4MDYyNDA5ZS1lY2NiLTQ2ZTEtOTcxMC1mNDhjMjBmMzRmMzUifQ.tAzbjFSMxtGd60xq6k-Ixi7Bjs51-Vhi4lhu-kpf27Q";
 
         new WebRTCMeetingAPI({
-          serverUrl:  "ws://backend.antier.xyz",
+          serverUrl:  "ws://localhost:8000",
           roomName:   params.get("room") || "test-room",
           token,
           parentNode: document.querySelector("#meeting-container"),
