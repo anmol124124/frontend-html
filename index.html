@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JUSST-MEETING PLATFORM</title>
+    <title>r4fv</title>
     <script src="https://backend.antier.xyz/public/js/app.js?ngrok-skip-browser-warning=true" defer></script>
     <style>html,body,#meeting-container{height:100%;margin:0}</style>
   </head>
@@ -13,7 +13,7 @@
       window.onload = function() {
         function launchApp() {
           new WebRTCMeetingAPI({
-            embedToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZjE3Mzc1OS0xYjM4LTRjZmYtYWFlNi1hYTdkZGRlZjMzMWEiLCJleHAiOjQ5Mjg2NDcyODcsInR5cGUiOiJhY2Nlc3MiLCJyb2xlIjoiaG9zdCIsImp0aSI6ImNmZjExYTMzLWVjZDMtNGIzMS04ODkxLThkYmVmMThjM2JmNCIsInByb2plY3RfaWQiOiI2NDFkYmUxMS0yNTQwLTQ3ZDMtOTU2ZC1kMjg2NWYzYWJlMjcifQ.kr7tqLTxHBHtb-PMOlFBqfNijPYP1FxZIdtnMMY2U0g",
+            embedToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwY2FlYWU4ZC1kNzU3LTQ4MjYtODE4NS05YTEwODNlOTdhMGMiLCJleHAiOjQ5Mjg3MDgyMTIsInR5cGUiOiJhY2Nlc3MiLCJyb2xlIjoiaG9zdCIsImp0aSI6IjM3MWNmNzIxLTgwMTEtNDQzNi05ZDg5LWY2MzNhOTEwNTg0NiIsInByb2plY3RfaWQiOiJlZTNjNzc0My03ZTY5LTRiMGYtYTEzZS03N2QxZGRlZDE5NDMifQ.inY6OTMg36s14MdncouIenatU9uI69FC3dC5v1b_pFs",
             parentNode: document.getElementById('meeting-container'),
             onLeave: launchApp,
           });
