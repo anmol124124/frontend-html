@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DB</title>
+    <title>TEst</title>
     <script src="https://backend.antier.xyz/public/js/app.js?ngrok-skip-browser-warning=true" defer></script>
     <style>html,body,#meeting-container{height:100%;margin:0}</style>
   </head>
@@ -13,7 +13,7 @@
       window.onload = function() {
         function launchApp() {
           new WebRTCMeetingAPI({
-            embedToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5ZjYzZmQ3OS1lZGNiLTRmNjYtODk4NS1lOTA3OTkyN2EyMzUiLCJleHAiOjQ5Mjg4MjA1NzEsInR5cGUiOiJhY2Nlc3MiLCJyb2xlIjoiaG9zdCIsImp0aSI6ImRlM2NiMzU5LTY2ZDktNGZkOS1hNWRhLWY0NWIxNTZlZmIwYyIsInByb2plY3RfaWQiOiIzYzUyNzBkNy04NGM5LTRjMzAtODQzOS1mYmZmMDdlZTM5MDAifQ.8Wd3ccID4ikjZPMvbuKwtdapTS60tOkeaLgniW7kMxg",
+            embedToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjOThjYmZiYS1lMGQ5LTRkYzMtOTVmNS1hMjc5ODI2OWJmNmMiLCJleHAiOjQ5MjkwNjY4NzQsInR5cGUiOiJhY2Nlc3MiLCJyb2xlIjoiaG9zdCIsImp0aSI6IjBhZDFlM2MyLTkyNzYtNGYxYi05OTFkLTJkYzA1ZDgyMTk0MiIsInByb2plY3RfaWQiOiI4NWMzN2FjMy0xYjA5LTQyODQtYTYwYy1iYWY3MTI3MTIxNzUifQ.4hA8FtboQq5O-joRn-yK8JfP7mWiYKQo0SBcagFYH6M",
             parentNode: document.getElementById('meeting-container'),
             onLeave: launchApp,
           });
