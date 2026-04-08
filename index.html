@@ -13,10 +13,9 @@
       window.onload = function() {
         function launchApp() {
           new WebRTCMeetingAPI({
-            embedToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmOWNhYTUyMi02NTg5LTQyNWMtYTZkMC1hNTcxNjM2YWFmZDkiLCJleHAiOjQ5MjkwNzYxOTcsInR5cGUiOiJhY2Nlc3MiLCJyb2xlIjoiaG9zdCIsImp0aSI6IjNhYmVjMzE5LWJhMDEtNGY1Ni1iMDVlLWY0NDU5NzdkYWRlNyIsInByb2plY3RfaWQiOiIxMDExOTkyMy1kYWI0LTQwYTQtOTZlOC01ZWE4OTk3NWNiNDkifQ.f6RUUk0vvvGCoD6W8c-KUHY4C4h7BlMWKJvcfFKWmK0",
+            embedToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhMWE2NzdjNS1mYmNlLTQxODktYjQ1ZS1jZjVkZjc2ZDJmODgiLCJleHAiOjQ5MjkyMjU1OTQsInR5cGUiOiJhY2Nlc3MiLCJyb2xlIjoiaG9zdCIsImp0aSI6IjU4Y2ViZDU1LWU1ZDctNGY2Mi1hYWY1LWY5OTE2YTcxODU2MyIsInByb2plY3RfaWQiOiI3OTdlNjFlOC02ZWFkLTQ1N2UtODE5Yy0xMjJlYjYwMGQ5NGUifQ.HJiHPnnBtFDNSVw4jmvoBP1kD7xHtmWKeihk65J_TXU",
             parentNode: document.getElementById('meeting-container'),
             onLeave: launchApp,
-            logoUrl: "/public/logos/10119923-dab4-40a4-96e8-5ea89975cb49.jpg",
           });
         }
         launchApp();
